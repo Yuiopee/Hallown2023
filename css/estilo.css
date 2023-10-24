@@ -1,0 +1,156 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+:root{
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --oscuroFooter: #2D2A2B;
+    --oscuroFooterPP: #7D87CA;
+    --oscuroFooterP: #8D6860;
+    --primario: #ffc107;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --violeta: #76448A;
+    --granate: #922B21;
+    --rojo: #B03A2E;
+    --ojo: #ff904f;
+    --fondoOscuro: #281507;
+    --fondoOscuro2: #120701;
+    --fondo2023claro:#0086C0;
+    --fondo2023Oscuro:#02142C;
+    --nubeOscura:#060914;
+    --nubeClara:#5D7F9C;
+    --ojos2023:#FFF3B0;
+    --verdeAcordeon2023:#254735;
+    --fondoAcordeon2023:#2E435E;
+    --verde2023:#2E435E;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+.borde{
+    border: 1px solid var(--oscuro);
+}
+
+.importante{
+    font-weight: bold;
+    font-size: large;
+}
+
+.centro{
+    text-align: center;
+}
+
+.colorAcordeon{
+    background-color: var(--fondoAcordeon2023)!important;
+    color: var(--ojos2023)!important;
+}
+
+.colorAcordeonIn{
+    color: var(--ojos2023)!important;
+    background-image: linear-gradient(to top, var(--nubeOscura) 0%, var(--fondo2023claro) 100%);
+}
+
+body{
+    font-family: 'Gloria Hallelujah', cursive, sans-serif;
+    background-image: linear-gradient(to top, var(--nubeClara) 0%, var(--nubeOscura) 100%);
+}
+
+h1{
+    text-align: center;
+    color: var(--ojos2023);
+}
+
+.botones{
+    color: var(--rojo);
+    text-align: center;
+}
+
+button{
+    text-align: center!important;
+}
+
+.botonesDescarga{
+    margin-top: 10px;
+}
+
+.portada{
+    width: 100%;
+    height: 160px;
+    margin: 0 auto;
+}
+
+.iconoFilmaffinity{
+    /*width: 20px;
+    height: 20px;
+    margin: 0 auto;*/
+}
+
+.dropColor{
+    color: var(--nubeOscura)!important;
+    padding: 0px!important;
+    margin: 0px!important;
+    /* background-color: var(--fondoAcordeon2023); */
+    background-image: linear-gradient(to top, var(--granate) 0%, var(--fondoAcordeon2023) 100%);
+}
+
+.footer{
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    /* background-image: linear-gradient(to top, var(--fondoOscuro) 0%, var(--fondo2023Oscuro) 100%); */
+    background-image: linear-gradient(to top, var(--verdeAcordeon2023) 0%, var(--fondo2023Oscuro) 100%);
+    color: var(--oscuroFooterP);
+    border-radius: 100px;
+    max-width: 100%;
+    max-height: 100%;
+    font-size: 10px;    
+}
+
+.titulo{
+    text-align: center;
+    font-size: 30px;
+    color: var(--oscuro);
+    max-width: 100%;
+}
+
+
+.descripcion, span{
+    text-align: center!important;
+    font-size: 18px;
+    color: var(--blanco);
+}
+
+.cuadro{
+    border: 2px solid;
+    border-color: var(--oscuroFooter);
+    padding: 10px;
+    border-radius: 10px;
+    /* background-image: linear-gradient(to top, var(--fondoAcordeon2023) 0%, var(--granate) 100%); */
+    background-image: linear-gradient(to top, var(--fondoAcordeon2023) 0%, var(--verdeAcordeon2023) 100%);
+}
+
+.mt{
+    margin-top: 100px;
+}
+
+/* Media querys*/
+
+@media (min-width: 768px){
+    .portada{
+        height: 320px;
+    }
+    .footer{
+        font-size: 18px;
+    }
+    
+}
+
+/* @media (min-width: 340px){
+    .footer{
+        font-size: 10px; #0086C0
+    }
+} */
